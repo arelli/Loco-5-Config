@@ -22,8 +22,6 @@ python auto_setter.py help
 Place the scripts in a dedicated working directory, alongside with(included in repository):</br> </br>
 <b>"password"</b></br>
 A text file containing the ssh session password for all the nanostations in plain text(the file has no suffix)</br></br>
-<b>"users.xlsx"</b></br>
-The file that contains all the user info and it is downloaded through the Admin Tool database(be aware that the configuration of the file can be different than yours.Our current configuration is in the form of comment in the excel_reader.py</br></br>
 <b>"additional_config"</b></br>
 This file contains the additional configuration changes you want to make, in the format <string_to_be_replaced> <string_to_replace_it>.See example in the additional_config file above.It can also be empty</br>
 To use the script with remote antennas of your network, you use the form:
