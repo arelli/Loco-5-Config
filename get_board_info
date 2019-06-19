@@ -1,0 +1,9 @@
+#!/bin/bash
+# use as: ./get_board_info <target_IP> <KexAlgorithm> <cipher> <ssh_username>
+boardinfo="$(sshpass -f password ssh -T -o "StrictHostKeyChecking=no" -o KexAlgorithms=$2 -c $3 $4@$1 <<EOF  
+cat /etc/board.info  
+EOF
+)"
+echo "$boardinfo"  # prints $boardinfo to the stdout
+#sometimes yes is needed as an input to the ssh command,because it asks for verification. it does not affect the Nanostaiton, 
+# because there is no command "yes"

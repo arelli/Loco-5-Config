@@ -1,0 +1,7 @@
+#!/bin/bash
+# use as: ./get_board_config <target_IP> <KexALgorithms> <cipher> <ssh_username>
+boardconfig="$(sshpass -f password ssh -o "StrictHostKeyChecking=no" -o KexAlgorithms=$2 -c $3 $4@$1 <<EOF 
+cat /tmp/system.cfg
+EOF
+)"
+echo "$boardconfig"  # prints $boardconfig to the stdout

@@ -1,0 +1,7 @@
+snmp.status=disabled snmp.status=enabled
+snmp.location= snmp.location=unknown
+snmp.contact= snmp.contact=test@test.com
+snmp.community= snmp.community=ttestcommunity
+ntpclient.1.server= ntpclient.1.server=example.ntp.server.com
+ntpclient.1.status= ntpclient.1.status=enabled
+ntpclient.status= ntpclient.status=enabled
